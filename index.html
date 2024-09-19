@@ -84,39 +84,21 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
 
-export default defineComponent({
-    components: {
-
-    },
-    props: [],
-    mounted() {
-    },
-    beforeUnmount() {
-    },
-    methods: {
-        paginaOrcamento() {
-            let __this = this;
-            window.open("https://wa.me/55" + __this.telefone + "?text=Olá!%20Gostaria%20de%20realizar%20um%20orçamento%20para%20meu%20site.%20:)", '_blank');
-        }
-    },
-    data() {
-        return {
-            telefone: '7198984767953'
-        };
-    },
-});
+    function paginaOrcamento() {
+        var telefone = '7198984767953';
+        window.open("https://wa.me/55" + telefone + "?text=Olá!%20Gostaria%20de%20realizar%20um%20orçamento%20para%20meu%20site.%20:)", '_blank');
+    }
 </script>
 
 <style>
-.pointer {
-    cursor: pointer;
-}
+    .pointer {
+        cursor: pointer;
+    }
 
-* {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
+    * {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
 </style>
